@@ -1,4 +1,4 @@
-const API_KEY = '48f62f3bbdd34a6c93869249dc20070c';
+const API_KEY = '58d00e9a91104ca8805e5cb807dc16a9';
 const RECIPE_COUNT = 4; // Fetch 4 at a time
 let isLoading = false;
 const loadedRecipeIds = new Set();
@@ -136,7 +136,7 @@ function createRecipeCard(recipe, className) {
 
     // Image
     const imgLink = document.createElement('a');
-    imgLink.href = `/Recipe_Search_UI/Recipe/recipe.html?id=${recipe.id}`; // Dynamic link with ID
+    imgLink.href = `/Recipe/recipe.html?id=${recipe.id}`; // Dynamic link with ID
     const imgBox = document.createElement('div');
     imgBox.classList.add('img-box');
     imgBox.style.backgroundImage = `url(${recipe.image})`;
@@ -184,7 +184,7 @@ function createRecipeCard(recipe, className) {
 
     // Button
     const btnLink = document.createElement('a');
-    btnLink.href = `/Recipe_Search_UI/Recipe/recipe.html?id=${recipe.id}`;
+    btnLink.href = `/Recipe/recipe.html?id=${recipe.id}`;
     const btn = document.createElement('button');
     btn.textContent = 'See Full Details';
     btnLink.appendChild(btn);

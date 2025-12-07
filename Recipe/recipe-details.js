@@ -1,4 +1,4 @@
-const API_KEY = '48f62f3bbdd34a6c93869249dc20070c';
+const API_KEY = '58d00e9a91104ca8805e5cb807dc16a9';
 
 let currentRecipe = null;
 
